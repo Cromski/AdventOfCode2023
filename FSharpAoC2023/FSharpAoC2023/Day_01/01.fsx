@@ -4,4 +4,4 @@ let dayOne arr =
     failwith "not implemented"
     
 
-printfn "%A" (dayOne (readLines "./FSharpAoC2023/Day_01/big.txt"))
+printfn "%A" (dayOne (readLines "./Day_01/big.txt"))
