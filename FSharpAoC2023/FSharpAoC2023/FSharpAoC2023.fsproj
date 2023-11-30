@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="Day_01\01.fsx" />
+        <Content Include="Day_01\big.txt" />
+        <Content Include="Day_01\mini.txt" />
+    </ItemGroup>
+
+</Project>
