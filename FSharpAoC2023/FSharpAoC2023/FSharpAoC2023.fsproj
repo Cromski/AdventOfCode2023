@@ -9,6 +9,7 @@
         <None Include="Day_01\01.fsx" />
         <Content Include="Day_01\big.txt" />
         <Content Include="Day_01\mini.txt" />
+        <Content Include="Day_01\pt2mini.txt" />
     </ItemGroup>
 
 </Project>
