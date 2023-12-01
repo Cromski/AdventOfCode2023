@@ -1,6 +1,12 @@
 open System
 let readLines filePath = List.ofSeq (System.IO.File.ReadLines(filePath))
 
+let ptOne (arr: string list) =
+    arr
+    |> List.map (fun s -> String.filter Char.IsDigit s) //remove letters
+    |> List.map (fun s -> s[0..0]+s[s.Length-1..s.Length]) //get first and last digit
+    |> Seq.sumBy int //get sum of ints
+
 let addStringAtIndex (s: string) (i: int) (c: string) : string =
     s[0..i]+c+s[i+1..s.Length]
 
@@ -17,17 +23,10 @@ let rec fixString (s: string) : string =
     | s when s.Contains "nine" -> fixString (addStringAtIndex s (s.IndexOf "nine") "9")
     | s -> s
 
-let ptOne (arr: string list) =
-    arr
-    |> List.map (fun s -> String.filter Char.IsDigit s) //remove letters
-    |> List.map (fun s -> s[0..0]+s[s.Length-1..s.Length]) //get first and last digit
-    |> Seq.sumBy int //get sum of ints
-
 let ptTwo (arr: string list) =
     arr
     |> List.map (fun s -> fixString s) //fixes these dumb strings :)
     |> ptOne
-    
 
 printfn "pt 1: %A" (ptOne (readLines "./Day_01/big.txt"))
 printfn "pt 2: %A" (ptTwo (readLines "./Day_01/big.txt"))
