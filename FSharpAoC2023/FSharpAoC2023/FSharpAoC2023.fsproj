@@ -10,6 +10,10 @@
         <Content Include="Day_01\big.txt" />
         <Content Include="Day_01\mini.txt" />
         <Content Include="Day_01\pt2mini.txt" />
+        <None Include="Day_02\02.fsx" />
+        <Content Include="Day_02\big.txt" />
+        <Content Include="Day_02\mini.txt" />
+        <Content Include="Day_02\pt2mini.txt" />
     </ItemGroup>
 
 </Project>
