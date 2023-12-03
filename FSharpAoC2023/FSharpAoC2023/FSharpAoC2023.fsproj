@@ -13,7 +13,6 @@
         <None Include="Day_02\02.fsx" />
         <Content Include="Day_02\big.txt" />
         <Content Include="Day_02\mini.txt" />
-        <Content Include="Day_02\pt2mini.txt" />
         <None Include="Day_03\03.fsx" />
         <Content Include="Day_03\big.txt" />
         <Content Include="Day_03\mini.txt" />
