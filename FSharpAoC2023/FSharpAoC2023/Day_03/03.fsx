@@ -46,7 +46,6 @@ let getFullNumberInStringFromCoord (str: string) ((x,y):Coord) (matrix: string l
 
 let rec findNextNonDigit (str: string) (x: int) =
     let sub = str.Substring(x,str.Length-x)
-    // printfn "%A" sub
     let rec aux acc (s: string) =
         match s with
         | s when s = "" -> acc
