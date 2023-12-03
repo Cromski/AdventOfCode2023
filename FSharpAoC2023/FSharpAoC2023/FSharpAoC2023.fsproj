@@ -16,7 +16,9 @@
         <None Include="Day_03\03.fsx" />
         <Content Include="Day_03\big.txt" />
         <Content Include="Day_03\mini.txt" />
-        <Content Include="Day_03\pt2mini.txt" />
+        <None Include="Day_04\04.fsx" />
+        <Content Include="Day_04\big.txt" />
+        <Content Include="Day_04\mini.txt" />
     </ItemGroup>
 
 </Project>
